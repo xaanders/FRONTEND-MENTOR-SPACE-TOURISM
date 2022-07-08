@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    height: 100%;
 }
 
 .main_container {
@@ -14,7 +15,6 @@ a {
 
 .home {
     background: fixed no-repeat url('../img/home/background-home-desktop.jpg');
-
 }
 
 .destination {
