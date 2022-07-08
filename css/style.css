@@ -1,11 +1,11 @@
 body {
-    margin: 0;
     height: 100%;
+    margin: 0;
 }
 
 .main_container {
-    height: 800px;
     background: #0B0D17;
+    height: 800px;
 
 }
 
@@ -15,6 +15,7 @@ a {
 
 .home {
     background: fixed no-repeat url('../img/home/background-home-desktop.jpg');
+
 }
 
 .destination {
@@ -115,7 +116,7 @@ hr {
     left: 167px;
     background: #FFFFFF;
     opacity: 0.25;  
-    width: 540px;
+    width: 410px;
     border-top: none;
     margin: 0;
     z-index: 100;
@@ -224,7 +225,7 @@ hr {
     width: 540px;
     height: 382px;
     left: 165px;
-    top: 387px;
+    top: 367px;
     text-align: justify;
 }
 
@@ -235,8 +236,8 @@ hr {
     position: absolute;
     width: 415px;
     height: 442px;
-    left: 832px;
-    top: 310px;
+    left: 802px;
+    top: 270px;
 
 }
 
@@ -436,8 +437,8 @@ hr {
 
 .main_btn {
     position: absolute;
-    left: 1001px;
-    top: 455px;
+    left: 920px;
+    top: 425px;
     width: 274px;
     height: 274px;
     background-color: white;
@@ -461,8 +462,8 @@ hr {
 
     box-sizing: content-box;
     border-radius: 181px;
-    top: 455px;
-    left: 1001px;
+    top: 425px;
+    left: 920px;
     width: 274px;
     height: 274px;
     padding: 0;
