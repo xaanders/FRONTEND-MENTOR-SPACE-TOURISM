@@ -4,6 +4,7 @@ body {
 
 .main_container {
     height: 800px;
+    background: #0B0D17;
 
 }
 
@@ -12,11 +13,7 @@ a {
 }
 
 .home {
-        background: #0B0D17;
-
-    background: fixed url('../img/home/background-home-desktop.jpg');
-    width: 100%;
-    height: 100%;
+    background: fixed no-repeat url('../img/home/background-home-desktop.jpg');
 
 }
 
@@ -324,7 +321,7 @@ hr {
     height: 477px;
     left: 905px;
     top: 272px;
-    background-image: url("../img/technology/image-launch-vehicle-portrait.jpg"); 
+    /* background-image: url("/img/technology/image-launch-vehicle-portrait.jpg"); */
     
 }
 
@@ -351,7 +348,7 @@ hr {
     height: 602px;
     left: 746px;
     top: 197px;
-    background: no-repeat url('../img/crew/image-douglas-hurley.png');
+    /* background: no-repeat url('/img/crew/image-douglas-hurley.png') */
 
 }
 
@@ -362,6 +359,7 @@ hr {
     position: absolute;
     top: 324px;
     left: 0;
+    /* background-color: burlywood; */
     justify-content: left;
     padding: 0;
 }
@@ -400,6 +398,7 @@ hr {
 
     width: 80px;
     height: 80px;
+    /* mix-blend-mode: normal; */
     opacity: 0.25;
     border: 1px solid #FFFFFF;
     
@@ -408,7 +407,8 @@ hr {
     font-weight: 400;
     font-size: 32px;
     line-height: 80px;
-    ``    text-align: center;
+    /* identical to box height */
+    text-align: center;
     letter-spacing: 2px;
     color: #FFFFFF;
     list-style: none;

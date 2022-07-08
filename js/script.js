@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             changePlanet() {
+
                 main_name.textContent = this.name;
                 pic.src = this.img.png;
                 text_descr.textContent = this.description;
