@@ -29,7 +29,7 @@ a {
 }
 
 .technology {
-    background: fixed url('/img/technology/background-technology-desktop.jpg');
+    background: fixed url('../img/technology/background-technology-desktop.jpg');
 }
 
 
@@ -324,7 +324,7 @@ hr {
     height: 477px;
     left: 905px;
     top: 272px;
-    /* background-image: url("/img/technology/image-launch-vehicle-portrait.jpg"); */
+    background-image: url("../img/technology/image-launch-vehicle-portrait.jpg"); 
     
 }
 
@@ -351,7 +351,7 @@ hr {
     height: 602px;
     left: 746px;
     top: 197px;
-    /* background: no-repeat url('/img/crew/image-douglas-hurley.png') */
+    background: no-repeat url('../img/crew/image-douglas-hurley.png');
 
 }
 
@@ -362,7 +362,6 @@ hr {
     position: absolute;
     top: 324px;
     left: 0;
-    /* background-color: burlywood; */
     justify-content: left;
     padding: 0;
 }
@@ -401,7 +400,6 @@ hr {
 
     width: 80px;
     height: 80px;
-    /* mix-blend-mode: normal; */
     opacity: 0.25;
     border: 1px solid #FFFFFF;
     
@@ -410,8 +408,7 @@ hr {
     font-weight: 400;
     font-size: 32px;
     line-height: 80px;
-    /* identical to box height */
-    text-align: center;
+    ``    text-align: center;
     letter-spacing: 2px;
     color: #FFFFFF;
     list-style: none;
