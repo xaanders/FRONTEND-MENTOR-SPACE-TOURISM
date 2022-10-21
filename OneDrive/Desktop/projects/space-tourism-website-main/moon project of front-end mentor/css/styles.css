@@ -1,0 +1,1305 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bellefair';
+    font-weight: 400;
+    font-style: normal;
+    color: #D0D6F9;
+    overflow-x: hidden;
+
+}
+
+
+*:before, 
+*:after { 
+    box-sizing: border-box;
+
+}
+
+span { 
+    font-weight: 700;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    margin: 0 1px;
+}
+
+
+#home, #destination, #crew, #technology {
+    min-height: 100vh;
+
+}
+
+#home {
+    background:  url('../img/home/background-home-desktop.jpg');
+    background-size: cover;
+}
+
+#destination {
+    background:  url('../img/destination/background-destination-desktop.jpg');
+    background-size: cover;
+
+}
+
+#crew {
+    background:  url('../img/crew/background-crew-desktop.jpg');
+    background-size: cover;
+
+}
+
+#technology {
+    background:  url('../img/technology/background-technology-desktop.jpg');
+    background-size: cover;
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 400;
+
+}
+
+h5,
+p {
+    margin: 0;
+    font-family: 'Barlow';
+
+}
+
+
+
+/* NAVIGATION */
+
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0 0 3.43rem;
+    position: relative;
+}
+
+.nav-menu {
+
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    padding: 0 63px 0 123px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: 'Barlow Condensed';
+    font-size: 1rem;
+    line-height: 1.18rem;
+    letter-spacing: 2.7px;
+    color: #FFFFFF;
+    padding: 36px 0;
+    margin-right: 3rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+.nav-link:last-child {
+    margin: 0;
+}
+
+.nav-link:hover { 
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #fff;
+}
+
+.nav-link span {
+    margin-right: 12px;
+}
+.navbar-nav {
+    display: flex;
+
+}
+
+.navbar-devider {
+    position: absolute;
+    z-index: 5;
+    left: 165px;
+    background: #FFFFFF;
+    opacity: 0.4;
+    width: 35%;
+    height: 1px;
+}
+
+/* MAIN BLOCK */
+.home-content {
+    align-items: flex-end;
+    padding: 15.68rem 3.8rem 4.18rem 10.3rem;
+}
+
+.main_descr {
+    text-align: justify;
+    max-width: 450px;
+}
+
+.description {
+    margin: 0;
+    font-size: 1.12rem;
+    line-height: 2rem;
+    color: #D0D6F9;
+    max-width: 444px;
+}
+
+
+
+.topic {
+    font-family: 'Barlow Condensed';
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+    letter-spacing: 4.725px;
+    color: #FFFFFF;
+}
+
+
+
+.topic_number {
+    font-weight: 700;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+.topic_text {
+    display: inline;
+    font-size: 1.75rem;
+}
+
+/* DESTINATION PAGE */
+
+.pick {
+    padding: 4.75rem 0 0 10.37rem;
+}
+
+.dest_topic {
+    padding-bottom: 4rem;
+}
+
+.planet_img {
+    margin: 2rem 11.6% 7rem 16.4%;
+}
+.planet_img img{
+
+    width: 445px;
+    height: 445px;
+    
+}
+
+.dest_descr {
+    padding: 0;
+    margin: 0.5rem 10.2rem 0 0;
+    max-width: 445px;
+    max-height: 472px;
+    
+}
+
+
+
+.dest_descr .navbar { 
+    padding: 0;
+}
+
+.destination-menu {
+    background: none;
+    backdrop-filter: unset;
+    padding: 0;
+}
+
+.destination-menu .nav-link {
+    padding: 0;
+    padding-bottom: 0.75rem;
+    margin-right: 2.18rem;
+
+}
+
+.destination-menu .nav-link:last-child {
+    margin: 0;
+}
+
+.dest_description {
+    margin-top: 1%;
+}
+
+
+
+.space_title {
+    font-size: 9.35rem;
+    line-height: 172px;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+
+}
+
+
+
+.travel_to {
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.sub-descr {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    margin-top: 3.37rem;
+}
+
+.km, .days { 
+    margin-right: 4.93rem;
+
+}
+
+.approx-dimension {
+    font-family: 'Barlow Condensed';
+    margin: 0.75rem 0 0 0;
+    font-size: 0.875rem;
+    line-height: 1.06rem;
+    letter-spacing: 2.36px;
+}
+
+.approx-time, .approx-distance {
+    font-family: 'Bellefair';
+    margin: 0.75rem 0 0 0; 
+    font-size: 1.75rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    min-width: 156px;
+}
+
+
+.planet_name {
+    font-size: 6.25rem;
+    margin: 2.31rem 6.93rem 0.87rem 0;
+
+}
+
+
+/* CREW PAGE */
+
+.crew_topic {
+    padding-bottom: 9.6rem;
+}
+
+.crew_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.meet_crew {
+    margin: 4.75rem 0 9.6rem 10.375rem;
+    text-align: left;
+}
+
+.crew_descr {
+    max-width: 614px;
+    font-family: 'Bellefair';
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 10.375rem;
+    padding-bottom: 5.87rem;
+    max-height: 500px;
+}
+
+.crew_position {
+    font-size: 2rem;
+    line-height: 37px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin: 0;
+    margin-bottom: 0.93rem;
+
+}
+
+.crew_name {
+    font-size: 3.5rem;
+    line-height: 64px;
+    margin-bottom: 1.68rem;
+}
+
+.crew_bio {
+    margin-bottom: 7.5rem;
+    min-height: 160px;
+}
+
+.crew_img {
+    position: relative;
+}
+.crew_img img {
+    position: absolute;
+    bottom: 0;
+    right: 8rem;
+}
+
+
+/* INDICATORS  */
+
+.carousel_indicators {
+    display: flex;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+}
+
+
+.big_carousel_wrap {
+    /* padding-left: 10.31rem; */
+    width: 20%;
+    
+}
+
+.big_carousel {
+    /* margin: 0 auto; */
+    padding: 0;
+    
+}
+
+
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background: #FFFFFF;
+    opacity: 0.17;
+    transition: opacity .6s ease;
+    border-radius: 8px;
+    margin-right: 24px;
+    list-style: none;
+}
+
+.dot:hover {
+    opacity: .5;
+}
+
+.dot_active {
+    opacity: 1;
+
+}
+
+.big_dot {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.25;
+    border: 1px solid #FFFFFF;
+
+    font-size: 2rem;
+    line-height: 2.29rem;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    list-style: none;
+    border-radius: 120px;
+    margin-bottom: 2rem;
+}
+
+
+/* 
+.big_dot span {
+    font-weight: unset;
+    display: block;
+    margin: 22px 31.5px 21px 32.5px;
+} */
+
+.big_dot_active {
+    background-color: #FFFFFF;
+    color: #0B0D17;
+    opacity: 1;
+}
+
+.big_dot:hover {
+    opacity: 1;
+}
+
+/* TECH PAGE */
+
+
+.tablet {
+    display: none;
+}
+
+.tech_content {
+    align-items: center;
+    padding-bottom: 6.3rem 
+}
+
+.tech_descr {
+    max-width: 470px;
+    max-height: 303px;
+}
+
+/* .tech_img img {
+
+} */
+
+.terminology {
+    font-family: 'Barlow Condensed';
+    font-size: 1rem;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    margin-bottom: 11px;
+}
+
+.tech_name {
+    margin-bottom: 17px;
+    font-size: 3.5rem;
+    line-height: 64px;
+}
+
+.tech_text {
+    font-size: 1.12rem;
+    line-height: 32px;
+}
+
+
+
+
+/* HOME BUTTON  */
+.btn_box {
+    margin: 0;
+    text-align: right;
+
+}
+
+.main_btn {
+    width: 274px;
+    height: 274px;
+    background-color: #fff;
+    font-family: 'Bellefair';
+
+    font-size: 2rem;
+    line-height: 37px;
+    letter-spacing: 2px;
+    border-radius: 137px;
+    color: #0B0D17;
+    border: none;
+    padding: 0;
+}
+
+.main_btn:hover {
+    box-shadow: 0px 0px 0px 44px rgba(255, 255, 255, 0.1);
+
+    border-width: 44px;
+    border-radius: 181px;
+}
+
+
+@media screen and (max-width:1290px) {
+
+    .nav-menu {        
+        padding: 0 1.3rem 0 7.68rem;
+    
+    }
+
+    .navbar-devider {
+        width: 33.7%;
+    }
+    .crew_img img {
+        width: 476px;
+        right: 1rem;
+    }
+
+    /* DESTINATION PAGE */
+
+    .planet_img {
+        margin: 0 5.5rem 2rem 3.4rem;
+    
+    }
+    .dest_descr {
+        margin-right: 7.2rem;
+    }
+    .dest_text { 
+        margin: 0 auto;
+    }
+
+  
+
+    .tech_img { 
+        width: 33%;
+    }
+
+    .tech_img img { 
+        width: 100%;
+    }
+
+    .nav-menu{
+        padding-left: 80px;
+    }
+
+
+}
+@media screen and (max-width:1150px) {
+
+   
+    .crew_descr {
+        max-width: 440px;
+        padding-left: 10.375rem;
+    }
+
+    .crew_name {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+    .crew_img img {
+        width: 456px;
+        right: 1rem;
+    }
+
+  
+ 
+    /* .big_carousel_wrap {
+        padding-left: 1.31rem;
+    }
+
+    .tech_img img {
+        width: 70%;
+        height: 70%;
+    } */
+
+}
+
+@media screen and (max-width:1050px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .navbar-devider {
+        display: none;
+    }
+
+    .nav-link {
+        margin-right: 2rem;
+    }
+
+    .pick {
+        padding: 2.5rem 0 0 2.4rem;
+    }  
+    
+    .dest_topic {
+        padding-bottom: 3.75rem;
+    }
+
+    
+
+    /* HOME PAGE */
+    .home-content {
+        padding: 0;
+    }
+
+    .main_descr {
+        text-align: center;
+        margin: 0 auto;
+        padding: 100px 0 50px 0;
+    }
+    
+    .btn_box {
+        padding: 0;
+        text-align: center;
+    }
+
+    /* DESTINATION PAGE  */
+    .planet_img {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
+    .dest_descr {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 700px;
+        max-height: 540px;
+    }
+
+    .dest_text {
+        max-width: none;
+    }
+
+    .dest_descr .navbar { 
+        padding-top: 20px;
+        text-align: center;
+    }
+    .dest_descr .navbar-nav {
+        margin: 0 auto;
+    }
+    .planet_name {
+        margin-right: 0;
+    }
+
+    .sub-descr {
+        padding-bottom:  3.87rem;
+    }
+    .km, .days {
+        margin-right: 0;
+    }
+    
+    /* CREW PAGE */
+
+    .crew_topic {
+        padding-bottom: 3.75rem;
+    }
+
+    .crew_content {
+        justify-content:unset;
+        flex-direction: column;
+    }
+
+    .crew_descr {
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .crew_bio {
+        margin: 0 auto;
+    }
+
+    .carousel_indicators {
+        justify-content: center;
+        margin: 2.5rem 0 2.5rem 0;
+    }
+
+    .crew_img {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .crew_img img {
+        position: static;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* TECH PAGE */
+
+    .big_carousel_wrap {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 2.75rem;
+    }
+
+    
+
+    .big_carousel {
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        
+    }
+    
+    .big_dot {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        line-height: 1.71rem;
+        margin: 0 auto;
+    }
+
+    .tech_topic {
+        padding-bottom: 3.75rem;
+    }
+    .tech_descr {
+        margin: 0 auto;
+    }
+    .terminology {
+        margin-bottom: 1rem;
+    }
+
+    .tech_name {
+        margin-bottom: 17px;
+        font-size: 2.5rem;
+        line-height: 45.8px;
+        margin-bottom: 1rem;
+
+    }
+    .tech_text {
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+
+    .tech_img {
+        order: -1;
+        width: 100%;
+        border: none;
+        margin-bottom: 3.5rem;
+    }
+
+    .tech_img .desktop {
+        display: none;
+    }
+    .tablet {
+        display: block;
+        
+    }
+    
+
+    
+}
+
+@media screen and (max-width:800px) {
+
+    #home {
+        background: fixed url('../img/home/background-home-tablet.jpg');
+        background-size: cover;
+    }
+
+    #destination {
+        background: fixed url('../img/destination/background-destination-tablet.jpg');
+        background-size: cover;
+    }
+
+    #crew {
+            background: fixed url('../img/crew/background-crew-tablet.jpg');
+            background-size: cover;
+    }
+    #technology {
+        background: fixed url('../img/technology/background-technology-tablet.jpg');
+        background-size: cover;
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
+
+    span {
+        font-weight: 700;
+    }
+
+  
+
+
+    .topic_text, .topic_number {
+        font-family: 'Barlow Condensed';
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        letter-spacing: 3.375px;
+        font-weight: 400;
+
+    }
+
+    .topic_number {
+        font-weight: 700;
+
+    }
+
+    
+
+/* NAVIGATION */
+    .header span{
+        display: none;
+    }
+
+    .header_wrapper {
+        padding: 0;
+        padding-left: 2.43rem;
+    }
+
+    .nav-menu {
+        padding: 0;
+    }
+
+    .nav-link {
+        padding: 36px 0;
+        margin-right: 2rem;
+    }
+
+    .nav-link:last-child {
+        margin-right: 0;
+    }
+    
+    .header .navbar-nav {
+        padding: 0 46px 0 48px;
+    }
+    
+
+    /* HOME PAGE */
+
+    .main_descr {
+        text-align: center;
+        margin: 0 auto;
+        width: 74%;
+        padding: 10% 0;
+    }
+
+    .travel_to {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        text-align: center;
+        color: #D0D6F9;
+    }
+
+    .space_title {
+        line-height: 9.375rem;
+        font-size: 9.375;
+        padding: 0;
+
+    }
+
+    .description {
+        line-height: 1.75rem;
+    }
+
+    .btn_box {
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 0 8.7% 0;
+
+    }
+
+    .main_btn {
+        text-align: center;
+    }
+
+    /* DESTINATION PAGE */
+
+
+   
+    
+    .planet_img {
+        margin: 0;
+        margin-bottom: 3.31rem;
+    }
+    .planet_img img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .dest_descr .navbar {
+        padding: 0;
+        
+    }
+
+    .dest_descr .navbar-nav {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .dest_descr .nav-link {
+        padding: 0;
+        padding-bottom: 1rem;
+    }
+
+    .dest_descr .nav-link:last-child {
+        margin-right: 0;
+    }
+
+
+    .planet_name {
+        font-size: 5rem;
+        line-height: 5.75rem;
+        text-align: center;
+        margin: 0;
+        margin-top: 2rem;
+    }
+    
+    .dest_text {
+        margin: 0 auto;
+        max-width: 573px;
+        font-size: 1rem;
+        line-height: 1.75rem;
+        padding-bottom: 3.06rem;
+        padding-top: 0.5rem;
+
+    }
+
+
+    .sub-descr {
+        margin: 0 auto;
+        max-width: 74%;
+        border-top: 1px solid rgba(255, 255, 255, 0.2)
+    }
+    
+    .days {
+        margin-right: 3.59rem;
+    }
+
+    .km {
+        margin-left: 4.06rem;
+    }
+
+    /* CREW PAGE */
+
+
+    .crew_descr {
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .crew_position {
+        font-size: 1.5rem;
+        line-height: 28px;
+        margin-bottom: 0.5rem;
+    }
+
+    .crew_name {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        line-height: 46px;
+    }
+
+    .crew_bio {
+        font-size: 1rem;
+        line-height: 28px;
+        margin-bottom: 2.5rem;
+        min-height: 112px;
+        
+    }
+
+    
+
+    .dot {
+        height: 10px;
+        width: 10px;
+        background: #FFFFFF;
+        opacity: 0.17;
+        transition: opacity .6s ease;
+        border-radius: 8px;
+        margin-right: 1rem;
+        list-style: none;
+    }
+
+    .dot:last-child {
+        margin: 0;
+    }
+    
+    .dot_active {
+        opacity: 1;
+    }
+
+    
+    .crew_img img {
+        display: block;
+        margin: 0 auto;
+        width: 81%;
+        height: 81%;
+    }
+}
+
+
+@media screen and (max-width:560px) {
+    #home {
+        background: url('../img/home/background-home-mobile.jpg');
+        background-size: cover
+    }
+
+    #destination {
+        background: fixed url('../img/destination/background-destination-mobile.jpg');
+        background-size: cover;
+    }
+
+    .space_title {
+        font-size: 5rem;
+        line-height: 100px;
+    }
+    .pick {
+        /* margin: 0 auto */
+    }
+
+/* NAVIGATION */
+
+
+    .header_wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem 1.5rem 0;
+        
+    }
+    
+    
+    .nav-menu .navbar-nav.active {
+        display: flex;
+        overflow: auto; 
+
+    }
+
+    .nav-menu .navbar-nav {
+        flex-direction: column;
+        padding: 7.375rem 0 0 2rem;
+        /* overflow: auto; */
+        /* height: 100%; */
+
+        
+    }
+    .nav-menu.active {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        padding: 0;
+        width: 60%;
+        z-index: 4;
+        height: 400px;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling:touch;
+          
+    }
+
+
+    .nav-menu .navbar-nav span {
+        display: inline;
+    }
+
+    .nav-menu .nav-link {
+        padding: 0;
+        margin: 0 0 2rem 0;
+    }
+
+    .navbar-logo img {
+        max-width: 40px;
+    }
+
+
+    .navbar-toggler {
+        position: relative;
+        z-index: 5;
+        width: 24px;
+        height: 21px;
+        cursor: pointer;
+    }
+
+    .navbar-toggler span, 
+    .navbar-toggler::before,
+    .navbar-toggler::after {
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #D0D6F9;;
+    }
+
+    .navbar-toggler::before,
+    .navbar-toggler::after {
+        content: "";
+    }
+
+    .navbar-toggler::before {
+        top: 0
+    }
+    .navbar-toggler::after {
+        bottom: 0
+    }
+
+    .navbar-toggler span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+        
+    }
+
+   
+    /* HOME PAGE */
+
+    /* DESTINATION PAGE */
+
+    .pick {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        padding-top: 1.5rem;
+    }
+
+    .dest_topic {
+        padding-bottom: 2rem;
+    }
+
+    .dest_descr {
+        max-height: 516px;
+        padding-bottom: 2rem;
+    }
+
+    .dest_text {
+
+        padding: 0;
+        margin-bottom: 2rem;
+        max-width: 327px;
+        min-height: 125px;
+    }
+    
+    .description {
+        line-height: 1.56rem;
+    }
+
+    .sub-descr {
+        display: block;
+        padding: 0;
+    }
+
+    .dest_description {
+        max-width: 87%;
+    }
+
+    .km, .days {
+        margin: 0 auto;
+    }
+
+    .approx-dimension {
+        margin: 0;
+    }
+
+    .km {
+        margin: 2rem 0 2rem 0;
+    }
+
+    .planet_img img {
+        width: 170px;
+        height: 170px;
+    }
+
+    /* CREW PAGE */
+
+    .crew_topic {
+        padding-bottom: 2rem;
+    }
+
+    .crew_content {
+        flex-direction: column-reverse;
+    }
+
+    .crew_descr {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 327px;
+    }
+    
+    
+
+    .crew_img {
+        margin: 0 1.5rem;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+    }
+    .crew_img img {
+        display: block;
+        margin: 0 auto;
+        width: 58%;
+        height: 31%;
+
+    }
+
+    .carousel_indicators {
+        margin: 2rem 0;
+    }
+
+    .crew_position {
+        font-size: 1rem;
+        line-height: 18px;
+    }
+
+    .crew_name {
+        font-size: 1.5rem;
+        line-height: 28px;
+    }
+
+    .crew_bio {
+        font-size: 0.93rem;
+        line-height: 25px;
+    }
+
+    /* TECH PAGE */
+
+    .tech_content {
+        padding-bottom: 56px;
+    }
+    .big_carousel_wrap {
+        margin-bottom: 1.6rem;
+    }
+    .big_carousel {
+        justify-content: space-between;
+    }
+    
+    
+    .big_dot {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        line-height: 18px;
+    }
+
+    .tech_topic {
+        
+        font-size: 1rem;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        padding-bottom: 2rem;
+        text-align:center;
+
+    }
+ 
+    .terminology {
+        font-size: 0.875rem;
+        line-height: 17px;
+    }
+
+    .tech_name {
+        font-size: 1.5rem;
+        line-height: 28px;
+    }
+    .tech_text {
+        font-size: 0.9375rem;
+        line-height: 25px;
+        max-width: 327px;
+        
+    }
+
+    .tech_img {
+        margin-bottom: 2.12rem;
+
+    }
+
+
+}
+

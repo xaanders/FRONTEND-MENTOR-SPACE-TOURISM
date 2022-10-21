@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+<!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+<!-- CSS -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Frontend Mentor | Space tourism website</title>
+
+</head>
+<body>
+  <div id="technology">
+    <div class="container">
+      <header class="header">
+        <div class="header_wrapper">
+          <a class="navbar-logo">
+            <img src="../img/shared/logo.svg" alt="logo">
+          </a>
+
+          <div class="navbar-devider"></div>
+          
+          <div class="navbar">
+  
+         
+            <div class="navbar-toggler">
+              <span></span>
+            </div>
+
+            <div class="nav-menu" >
+              
+              <div class="navbar-nav"   >
+                <a class='nav-link' aria-current="page" href="index.html"><span>00</span>HOME</a>
+                <a class='nav-link' href="destination.html"><span>01</span>DESTINATION</a>
+                <a class='nav-link' href="crew.html"><span>02</span>CREW</a>
+                <a class='nav-link active' href="technology.html"><span>03</span>TECHNOLOGY</a>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </header>
+
+
+      <div class="pick tech_topic">
+        <div class="topic">
+          <span class="topic_number">02</span> 
+          <h4 class="topic_text">MEET YOUR CREW</h4> 
+        </div>
+      </div>
+
+      
+      <div class="content tech_content">
+
+        <div class="big_carousel_wrap">
+          <ol class="big_carousel">
+            <li data-tech-name="Launch vehicle" class="big_dot big_dot_active" onclick="changeTech(this)">1</li>
+            <li data-tech-name="Spaceport" class="big_dot" onclick="changeTech(this)">2</li>
+            <li data-tech-name="Space capsule" class="big_dot" onclick="changeTech(this)">3</li>
+          </ol>
+        </div>
+
+        <div class="tech_descr">
+          <h4 class="terminology">The terminology...</h4>
+          <h3 class="tech_name">Launch vehicle</h3>
+          <p class="description tech_text"> A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+            payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+            WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+            it's quite an awe-inspiring sight on the launch pad!</p>
+        </div>
+  
+
+        <div class="tech_img">
+          <img class="desktop" src="../img/technology/image-launch-vehicle-portrait.jpg" alt="current-tech">
+          <img class="tablet" src="../img/technology/image-launch-vehicle-landscape.jpg" alt="current-tech-mob">
+        </div>
+
+      </div>
+
+    </div>
+    
+  </div>
+
+  <script> 
+    let technologies;
+
+    const menu = document.querySelectorAll('.big_dot')
+        mainName = document.querySelector('.tech_name'),
+        pics = document.querySelectorAll('.tech_img img'),
+        descr = document.querySelector('.tech_text');
+
+    
+    const getData = async (url) => {
+
+      const res = fetch(url)
+      .then(data => data.json())
+      return await res;
+    }
+
+    getData('data.json')
+    .then(data => {
+      technologies = data.technology;
+    });
+
+    function changeTech(techName) {
+      technologies.forEach(item => {
+        if(item.name == techName.getAttribute('data-tech-name')) {
+          mainName.innerHTML = item.name;
+          pics.forEach(elem => {
+            if(getComputedStyle(elem).display == 'block') {
+                elem.src = elem.classList.contains('desktop') ? item.images.portrait : item.images.landscape;
+            }
+          })
+          descr.innerHTML = item.description;
+          menu.forEach(item => {
+            item.classList.remove('big_dot_active');
+            techName.classList.add('big_dot_active');
+
+          })
+          
+        }
+      });
+
+    }
+
+  </script>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
