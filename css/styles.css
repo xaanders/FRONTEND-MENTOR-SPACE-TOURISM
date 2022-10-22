@@ -839,6 +839,8 @@ p {
     .header .menu-wrap.active {
         top: 0;
         display: block;
+        background: rgba(255, 255, 255, 0.04);
+
     }
     .nav-menu span {
         display: inline;
