@@ -290,12 +290,11 @@ p {
 }
 .crew_img {
     position: relative;
-    margin-right: 8rem;
 }
 .crew_img img {
     position: absolute;
     bottom: 0;
-    display: block;
+    right: 8rem;
 }
 
 /* INDICATORS  */
@@ -455,9 +454,9 @@ p {
         font-size: 3rem;
         margin-top: 2rem;
     }
-   
     .crew_img img {
-        width: 100%;
+        width: 456px;
+        right: 1rem;
     }
 
 }
@@ -1022,4 +1021,3 @@ p {
 
     }
 }
-
