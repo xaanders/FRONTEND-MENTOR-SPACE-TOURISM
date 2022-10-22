@@ -513,6 +513,7 @@ p {
     }
     .dest_text {
         max-width: none;
+        min-height: 96px;
     }
     .dest_descr .navbar { 
         text-align: center;
