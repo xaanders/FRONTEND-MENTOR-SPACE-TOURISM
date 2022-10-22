@@ -455,12 +455,9 @@ p {
         font-size: 3rem;
         margin-top: 2rem;
     }
-    .crew_img {
-        width: 436px;
-        margin-right: 1rem;
-    }
+   
     .crew_img img {
-        width: 436px;
+        width: 100%;
     }
 
 }
