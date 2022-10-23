@@ -58,7 +58,7 @@
 
         <div class="content dest-content">
           <div class="planet_img">
-            <img src="assets/img/destination/image-moon.png" alt="moon">
+            <img src="../assets/img/destination/image-moon.png" alt="moon">
           </div>
 
           <div class="dest_descr">
@@ -120,7 +120,7 @@
       return await res;
     }
 
-    getData('data.json')
+    getData('../data.json')
     .then(data => {
       destinations = data.destinations;
     });
