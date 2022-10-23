@@ -650,6 +650,10 @@ p {
     .topic_number {
         font-weight: 700;
     }
+    
+    .pick {
+        padding-left: 2.43rem;
+    }
 
 /* NAVIGATION */
     .header span{
