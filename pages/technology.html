@@ -22,7 +22,7 @@
       <header class="header">
         <div class="header_wrapper">
           <a class="navbar-logo">
-            <img src="assets/img/shared/logo.svg" alt="logo">
+            <img src="../assets/img/shared/logo.svg" alt="logo">
           </a>
 
           <div class="navbar-devider"></div>
@@ -105,7 +105,7 @@
       return await res;
     }
 
-    getData('data.json')
+    getData('../data.json')
     .then(data => {
       technologies = data.technology;
     });
